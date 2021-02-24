@@ -351,7 +351,15 @@ void SetOptCodeForHttpMethod(CURL* requestHandle, const std::shared_ptr<HttpRequ
 
             break;
         case HttpMethod::HTTP_DELETE:
-            curl_easy_setopt(requestHandle, CURLOPT_CUSTOMREQUEST, "DELETE");
+            if (request->HasHeader(Aws::Http::CONTENT_LENGTH_HEADER) && request->GetHeaderValue(Aws::Http::CONTENT_LENGTH_HEADER) == "0")
+            {
+                curl_easy_setopt(requestHandle, CURLOPT_CUSTOMREQUEST, "DELETE");
+            }
+            else
+            {
+                curl_easy_setopt(requestHandle, CURLOPT_POST, 1L);
+                curl_easy_setopt(requestHandle, CURLOPT_CUSTOMREQUEST, "DELETE");
+            }
             break;
         default:
             assert(0);
