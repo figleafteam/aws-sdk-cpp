@@ -1428,22 +1428,22 @@ namespace Model
         virtual void CreateAlgorithmAsync(const Model::CreateAlgorithmRequest& request, const CreateAlgorithmResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>Creates a running App for the specified UserProfile. Supported Apps are
-         * JupyterServer and KernelGateway. This operation is automatically invoked by
-         * Amazon SageMaker Studio upon access to the associated Domain, and when new
-         * kernel configurations are selected by the user. A user may have multiple Apps
-         * active simultaneously.</p><p><h3>See Also:</h3>   <a
+         * <p>Creates a running app for the specified UserProfile. Supported apps are
+         * <code>JupyterServer</code> and <code>KernelGateway</code>. This operation is
+         * automatically invoked by Amazon SageMaker Studio upon access to the associated
+         * Domain, and when new kernel configurations are selected by the user. A user may
+         * have multiple Apps active simultaneously.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateApp">AWS
          * API Reference</a></p>
          */
         virtual Model::CreateAppOutcome CreateApp(const Model::CreateAppRequest& request) const;
 
         /**
-         * <p>Creates a running App for the specified UserProfile. Supported Apps are
-         * JupyterServer and KernelGateway. This operation is automatically invoked by
-         * Amazon SageMaker Studio upon access to the associated Domain, and when new
-         * kernel configurations are selected by the user. A user may have multiple Apps
-         * active simultaneously.</p><p><h3>See Also:</h3>   <a
+         * <p>Creates a running app for the specified UserProfile. Supported apps are
+         * <code>JupyterServer</code> and <code>KernelGateway</code>. This operation is
+         * automatically invoked by Amazon SageMaker Studio upon access to the associated
+         * Domain, and when new kernel configurations are selected by the user. A user may
+         * have multiple Apps active simultaneously.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateApp">AWS
          * API Reference</a></p>
          *
@@ -1452,11 +1452,11 @@ namespace Model
         virtual Model::CreateAppOutcomeCallable CreateAppCallable(const Model::CreateAppRequest& request) const;
 
         /**
-         * <p>Creates a running App for the specified UserProfile. Supported Apps are
-         * JupyterServer and KernelGateway. This operation is automatically invoked by
-         * Amazon SageMaker Studio upon access to the associated Domain, and when new
-         * kernel configurations are selected by the user. A user may have multiple Apps
-         * active simultaneously.</p><p><h3>See Also:</h3>   <a
+         * <p>Creates a running app for the specified UserProfile. Supported apps are
+         * <code>JupyterServer</code> and <code>KernelGateway</code>. This operation is
+         * automatically invoked by Amazon SageMaker Studio upon access to the associated
+         * Domain, and when new kernel configurations are selected by the user. A user may
+         * have multiple Apps active simultaneously.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateApp">AWS
          * API Reference</a></p>
          *
@@ -1537,14 +1537,11 @@ namespace Model
 
         /**
          * <p>Creates an Autopilot job.</p> <p>Find the best performing model after you run
-         * an Autopilot job by calling . Deploy that model by following the steps described
-         * in <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-deploy-model.html">Step
-         * 6.1: Deploy the Model to Amazon SageMaker Hosting Services</a>.</p> <p>For
-         * information about how to use Autopilot, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">
-         * Automate Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See
-         * Also:</h3>   <a
+         * an Autopilot job by calling .</p> <p>For information about how to use Autopilot,
+         * see <a
+         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">Automate
+         * Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See Also:</h3> 
+         * <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateAutoMLJob">AWS
          * API Reference</a></p>
          */
@@ -1552,14 +1549,11 @@ namespace Model
 
         /**
          * <p>Creates an Autopilot job.</p> <p>Find the best performing model after you run
-         * an Autopilot job by calling . Deploy that model by following the steps described
-         * in <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-deploy-model.html">Step
-         * 6.1: Deploy the Model to Amazon SageMaker Hosting Services</a>.</p> <p>For
-         * information about how to use Autopilot, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">
-         * Automate Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See
-         * Also:</h3>   <a
+         * an Autopilot job by calling .</p> <p>For information about how to use Autopilot,
+         * see <a
+         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">Automate
+         * Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See Also:</h3> 
+         * <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateAutoMLJob">AWS
          * API Reference</a></p>
          *
@@ -1569,14 +1563,11 @@ namespace Model
 
         /**
          * <p>Creates an Autopilot job.</p> <p>Find the best performing model after you run
-         * an Autopilot job by calling . Deploy that model by following the steps described
-         * in <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/ex1-deploy-model.html">Step
-         * 6.1: Deploy the Model to Amazon SageMaker Hosting Services</a>.</p> <p>For
-         * information about how to use Autopilot, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">
-         * Automate Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See
-         * Also:</h3>   <a
+         * an Autopilot job by calling .</p> <p>For information about how to use Autopilot,
+         * see <a
+         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/autopilot-automate-model-development.html">Automate
+         * Model Development with Amazon SageMaker Autopilot</a>.</p><p><h3>See Also:</h3> 
+         * <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateAutoMLJob">AWS
          * API Reference</a></p>
          *
@@ -3408,10 +3399,11 @@ namespace Model
          * <li> <p> <code>StoppingCondition</code> - To help cap training costs, use
          * <code>MaxRuntimeInSeconds</code> to set a time limit for training. Use
          * <code>MaxWaitTimeInSeconds</code> to specify how long you are willing to wait
-         * for a managed spot training job to complete. </p> </li> </ul> <p> For more
-         * information about Amazon SageMaker, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How It
-         * Works</a>. </p><p><h3>See Also:</h3>   <a
+         * for a managed spot training job to complete. </p> </li> <li> <p>
+         * <code>Environment</code> - The environment variables to set in the Docker
+         * container.</p> </li> </ul> <p> For more information about Amazon SageMaker, see
+         * <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How
+         * It Works</a>. </p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateTrainingJob">AWS
          * API Reference</a></p>
          */
@@ -3449,10 +3441,11 @@ namespace Model
          * <li> <p> <code>StoppingCondition</code> - To help cap training costs, use
          * <code>MaxRuntimeInSeconds</code> to set a time limit for training. Use
          * <code>MaxWaitTimeInSeconds</code> to specify how long you are willing to wait
-         * for a managed spot training job to complete. </p> </li> </ul> <p> For more
-         * information about Amazon SageMaker, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How It
-         * Works</a>. </p><p><h3>See Also:</h3>   <a
+         * for a managed spot training job to complete. </p> </li> <li> <p>
+         * <code>Environment</code> - The environment variables to set in the Docker
+         * container.</p> </li> </ul> <p> For more information about Amazon SageMaker, see
+         * <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How
+         * It Works</a>. </p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateTrainingJob">AWS
          * API Reference</a></p>
          *
@@ -3492,10 +3485,11 @@ namespace Model
          * <li> <p> <code>StoppingCondition</code> - To help cap training costs, use
          * <code>MaxRuntimeInSeconds</code> to set a time limit for training. Use
          * <code>MaxWaitTimeInSeconds</code> to specify how long you are willing to wait
-         * for a managed spot training job to complete. </p> </li> </ul> <p> For more
-         * information about Amazon SageMaker, see <a
-         * href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How It
-         * Works</a>. </p><p><h3>See Also:</h3>   <a
+         * for a managed spot training job to complete. </p> </li> <li> <p>
+         * <code>Environment</code> - The environment variables to set in the Docker
+         * container.</p> </li> </ul> <p> For more information about Amazon SageMaker, see
+         * <a href="https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works.html">How
+         * It Works</a>. </p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/CreateTrainingJob">AWS
          * API Reference</a></p>
          *
@@ -5149,16 +5143,16 @@ namespace Model
         virtual void DescribeArtifactAsync(const Model::DescribeArtifactRequest& request, const DescribeArtifactResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>Returns information about an Amazon SageMaker job.</p><p><h3>See Also:</h3>  
-         * <a
+         * <p>Returns information about an Amazon SageMaker AutoML job.</p><p><h3>See
+         * Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeAutoMLJob">AWS
          * API Reference</a></p>
          */
         virtual Model::DescribeAutoMLJobOutcome DescribeAutoMLJob(const Model::DescribeAutoMLJobRequest& request) const;
 
         /**
-         * <p>Returns information about an Amazon SageMaker job.</p><p><h3>See Also:</h3>  
-         * <a
+         * <p>Returns information about an Amazon SageMaker AutoML job.</p><p><h3>See
+         * Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeAutoMLJob">AWS
          * API Reference</a></p>
          *
@@ -5167,8 +5161,8 @@ namespace Model
         virtual Model::DescribeAutoMLJobOutcomeCallable DescribeAutoMLJobCallable(const Model::DescribeAutoMLJobRequest& request) const;
 
         /**
-         * <p>Returns information about an Amazon SageMaker job.</p><p><h3>See Also:</h3>  
-         * <a
+         * <p>Returns information about an Amazon SageMaker AutoML job.</p><p><h3>See
+         * Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeAutoMLJob">AWS
          * API Reference</a></p>
          *
@@ -6083,14 +6077,26 @@ namespace Model
         virtual void DescribeSubscribedWorkteamAsync(const Model::DescribeSubscribedWorkteamRequest& request, const DescribeSubscribedWorkteamResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>Returns information about a training job.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns information about a training job. </p> <p>Some of the attributes
+         * below only appear if the training job successfully starts. If the training job
+         * fails, <code>TrainingJobStatus</code> is <code>Failed</code> and, depending on
+         * the <code>FailureReason</code>, attributes like <code>TrainingStartTime</code>,
+         * <code>TrainingTimeInSeconds</code>, <code>TrainingEndTime</code>, and
+         * <code>BillableTimeInSeconds</code> may not be present in the
+         * response.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeTrainingJob">AWS
          * API Reference</a></p>
          */
         virtual Model::DescribeTrainingJobOutcome DescribeTrainingJob(const Model::DescribeTrainingJobRequest& request) const;
 
         /**
-         * <p>Returns information about a training job.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns information about a training job. </p> <p>Some of the attributes
+         * below only appear if the training job successfully starts. If the training job
+         * fails, <code>TrainingJobStatus</code> is <code>Failed</code> and, depending on
+         * the <code>FailureReason</code>, attributes like <code>TrainingStartTime</code>,
+         * <code>TrainingTimeInSeconds</code>, <code>TrainingEndTime</code>, and
+         * <code>BillableTimeInSeconds</code> may not be present in the
+         * response.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeTrainingJob">AWS
          * API Reference</a></p>
          *
@@ -6099,7 +6105,13 @@ namespace Model
         virtual Model::DescribeTrainingJobOutcomeCallable DescribeTrainingJobCallable(const Model::DescribeTrainingJobRequest& request) const;
 
         /**
-         * <p>Returns information about a training job.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns information about a training job. </p> <p>Some of the attributes
+         * below only appear if the training job successfully starts. If the training job
+         * fails, <code>TrainingJobStatus</code> is <code>Failed</code> and, depending on
+         * the <code>FailureReason</code>, attributes like <code>TrainingStartTime</code>,
+         * <code>TrainingTimeInSeconds</code>, <code>TrainingEndTime</code>, and
+         * <code>BillableTimeInSeconds</code> may not be present in the
+         * response.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/DescribeTrainingJob">AWS
          * API Reference</a></p>
          *
@@ -6710,14 +6722,14 @@ namespace Model
         virtual void ListAutoMLJobsAsync(const Model::ListAutoMLJobsRequest& request, const ListAutoMLJobsResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>List the Candidates created for the job.</p><p><h3>See Also:</h3>   <a
+         * <p>List the candidates created for the job.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/ListCandidatesForAutoMLJob">AWS
          * API Reference</a></p>
          */
         virtual Model::ListCandidatesForAutoMLJobOutcome ListCandidatesForAutoMLJob(const Model::ListCandidatesForAutoMLJobRequest& request) const;
 
         /**
-         * <p>List the Candidates created for the job.</p><p><h3>See Also:</h3>   <a
+         * <p>List the candidates created for the job.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/ListCandidatesForAutoMLJob">AWS
          * API Reference</a></p>
          *
@@ -6726,7 +6738,7 @@ namespace Model
         virtual Model::ListCandidatesForAutoMLJobOutcomeCallable ListCandidatesForAutoMLJobCallable(const Model::ListCandidatesForAutoMLJobRequest& request) const;
 
         /**
-         * <p>List the Candidates created for the job.</p><p><h3>See Also:</h3>   <a
+         * <p>List the candidates created for the job.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/sagemaker-2017-07-24/ListCandidatesForAutoMLJob">AWS
          * API Reference</a></p>
          *

@@ -43,50 +43,62 @@ namespace Model
   public:
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline const AttributeBooleanValue& GetSourceDestCheck() const{ return m_sourceDestCheck; }
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline bool SourceDestCheckHasBeenSet() const { return m_sourceDestCheckHasBeenSet; }
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline void SetSourceDestCheck(const AttributeBooleanValue& value) { m_sourceDestCheckHasBeenSet = true; m_sourceDestCheck = value; }
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline void SetSourceDestCheck(AttributeBooleanValue&& value) { m_sourceDestCheckHasBeenSet = true; m_sourceDestCheck = std::move(value); }
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline ModifyInstanceAttributeRequest& WithSourceDestCheck(const AttributeBooleanValue& value) { SetSourceDestCheck(value); return *this;}
 
     /**
-     * <p>Specifies whether source/destination checking is enabled. A value of
-     * <code>true</code> means that checking is enabled, and <code>false</code> means
-     * that checking is disabled. This value must be <code>false</code> for a NAT
-     * instance to perform NAT.</p>
+     * <p>Enable or disable source/destination checks, which ensure that the instance
+     * is either the source or the destination of any traffic that it receives. If the
+     * value is <code>true</code>, source/destination checks are enabled; otherwise,
+     * they are disabled. The default value is <code>true</code>. You must disable
+     * source/destination checks if the instance runs services such as network address
+     * translation, routing, or firewalls.</p>
      */
     inline ModifyInstanceAttributeRequest& WithSourceDestCheck(AttributeBooleanValue&& value) { SetSourceDestCheck(std::move(value)); return *this;}
 
@@ -402,65 +414,74 @@ namespace Model
 
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline const Aws::Vector<Aws::String>& GetGroups() const{ return m_groups; }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline bool GroupsHasBeenSet() const { return m_groupsHasBeenSet; }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline void SetGroups(const Aws::Vector<Aws::String>& value) { m_groupsHasBeenSet = true; m_groups = value; }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline void SetGroups(Aws::Vector<Aws::String>&& value) { m_groupsHasBeenSet = true; m_groups = std::move(value); }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline ModifyInstanceAttributeRequest& WithGroups(const Aws::Vector<Aws::String>& value) { SetGroups(value); return *this;}
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline ModifyInstanceAttributeRequest& WithGroups(Aws::Vector<Aws::String>&& value) { SetGroups(std::move(value)); return *this;}
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline ModifyInstanceAttributeRequest& AddGroups(const Aws::String& value) { m_groupsHasBeenSet = true; m_groups.push_back(value); return *this; }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline ModifyInstanceAttributeRequest& AddGroups(Aws::String&& value) { m_groupsHasBeenSet = true; m_groups.push_back(std::move(value)); return *this; }
 
     /**
-     * <p>[EC2-VPC] Changes the security groups of the instance. You must specify at
-     * least one security group, even if it's just the default security group for the
-     * VPC. You must specify the security group ID, not the security group name.</p>
+     * <p>[EC2-VPC] Replaces the security groups of the instance with the specified
+     * security groups. You must specify at least one security group, even if it's just
+     * the default security group for the VPC. You must specify the security group ID,
+     * not the security group name.</p>
      */
     inline ModifyInstanceAttributeRequest& AddGroups(const char* value) { m_groupsHasBeenSet = true; m_groups.push_back(value); return *this; }
 

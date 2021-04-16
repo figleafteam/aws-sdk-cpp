@@ -536,22 +536,30 @@ namespace Model
         virtual void GetLambdaFunctionRecommendationsAsync(const Model::GetLambdaFunctionRecommendationsRequest& request, const GetLambdaFunctionRecommendationsResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>Returns the optimization findings for an account.</p> <p>For example, it
-         * returns the number of Amazon EC2 instances in an account that are
-         * under-provisioned, over-provisioned, or optimized. It also returns the number of
-         * Auto Scaling groups in an account that are not optimized, or
-         * optimized.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns the optimization findings for an account.</p> <p>It returns the
+         * number of:</p> <ul> <li> <p>Amazon EC2 instances in an account that are
+         * <code>Underprovisioned</code>, <code>Overprovisioned</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Auto Scaling groups in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li> <li>
+         * <p>Amazon EBS volumes in an account that are <code>NotOptimized</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Lambda functions in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li>
+         * </ul><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetRecommendationSummaries">AWS
          * API Reference</a></p>
          */
         virtual Model::GetRecommendationSummariesOutcome GetRecommendationSummaries(const Model::GetRecommendationSummariesRequest& request) const;
 
         /**
-         * <p>Returns the optimization findings for an account.</p> <p>For example, it
-         * returns the number of Amazon EC2 instances in an account that are
-         * under-provisioned, over-provisioned, or optimized. It also returns the number of
-         * Auto Scaling groups in an account that are not optimized, or
-         * optimized.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns the optimization findings for an account.</p> <p>It returns the
+         * number of:</p> <ul> <li> <p>Amazon EC2 instances in an account that are
+         * <code>Underprovisioned</code>, <code>Overprovisioned</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Auto Scaling groups in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li> <li>
+         * <p>Amazon EBS volumes in an account that are <code>NotOptimized</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Lambda functions in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li>
+         * </ul><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetRecommendationSummaries">AWS
          * API Reference</a></p>
          *
@@ -560,11 +568,15 @@ namespace Model
         virtual Model::GetRecommendationSummariesOutcomeCallable GetRecommendationSummariesCallable(const Model::GetRecommendationSummariesRequest& request) const;
 
         /**
-         * <p>Returns the optimization findings for an account.</p> <p>For example, it
-         * returns the number of Amazon EC2 instances in an account that are
-         * under-provisioned, over-provisioned, or optimized. It also returns the number of
-         * Auto Scaling groups in an account that are not optimized, or
-         * optimized.</p><p><h3>See Also:</h3>   <a
+         * <p>Returns the optimization findings for an account.</p> <p>It returns the
+         * number of:</p> <ul> <li> <p>Amazon EC2 instances in an account that are
+         * <code>Underprovisioned</code>, <code>Overprovisioned</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Auto Scaling groups in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li> <li>
+         * <p>Amazon EBS volumes in an account that are <code>NotOptimized</code>, or
+         * <code>Optimized</code>.</p> </li> <li> <p>Lambda functions in an account that
+         * are <code>NotOptimized</code>, or <code>Optimized</code>.</p> </li>
+         * </ul><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/GetRecommendationSummaries">AWS
          * API Reference</a></p>
          *
@@ -573,20 +585,40 @@ namespace Model
         virtual void GetRecommendationSummariesAsync(const Model::GetRecommendationSummariesRequest& request, const GetRecommendationSummariesResponseReceivedHandler& handler, const std::shared_ptr<const Aws::Client::AsyncCallerContext>& context = nullptr) const;
 
         /**
-         * <p>Updates the enrollment (opt in) status of an account to the AWS Compute
-         * Optimizer service.</p> <p>If the account is a management account of an
+         * <p>Updates the enrollment (opt in and opt out) status of an account to the AWS
+         * Compute Optimizer service.</p> <p>If the account is a management account of an
          * organization, this action can also be used to enroll member accounts within the
-         * organization.</p><p><h3>See Also:</h3>   <a
+         * organization.</p> <p>You must have the appropriate permissions to opt in to
+         * Compute Optimizer, to view its recommendations, and to opt out. For more
+         * information, see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/security-iam.html">Controlling
+         * access with AWS Identity and Access Management</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p> <p>When you opt in, Compute Optimizer automatically creates
+         * a Service-Linked Role in your account to access its data. For more information,
+         * see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/using-service-linked-roles.html">Using
+         * Service-Linked Roles for AWS Compute Optimizer</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/UpdateEnrollmentStatus">AWS
          * API Reference</a></p>
          */
         virtual Model::UpdateEnrollmentStatusOutcome UpdateEnrollmentStatus(const Model::UpdateEnrollmentStatusRequest& request) const;
 
         /**
-         * <p>Updates the enrollment (opt in) status of an account to the AWS Compute
-         * Optimizer service.</p> <p>If the account is a management account of an
+         * <p>Updates the enrollment (opt in and opt out) status of an account to the AWS
+         * Compute Optimizer service.</p> <p>If the account is a management account of an
          * organization, this action can also be used to enroll member accounts within the
-         * organization.</p><p><h3>See Also:</h3>   <a
+         * organization.</p> <p>You must have the appropriate permissions to opt in to
+         * Compute Optimizer, to view its recommendations, and to opt out. For more
+         * information, see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/security-iam.html">Controlling
+         * access with AWS Identity and Access Management</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p> <p>When you opt in, Compute Optimizer automatically creates
+         * a Service-Linked Role in your account to access its data. For more information,
+         * see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/using-service-linked-roles.html">Using
+         * Service-Linked Roles for AWS Compute Optimizer</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/UpdateEnrollmentStatus">AWS
          * API Reference</a></p>
          *
@@ -595,10 +627,20 @@ namespace Model
         virtual Model::UpdateEnrollmentStatusOutcomeCallable UpdateEnrollmentStatusCallable(const Model::UpdateEnrollmentStatusRequest& request) const;
 
         /**
-         * <p>Updates the enrollment (opt in) status of an account to the AWS Compute
-         * Optimizer service.</p> <p>If the account is a management account of an
+         * <p>Updates the enrollment (opt in and opt out) status of an account to the AWS
+         * Compute Optimizer service.</p> <p>If the account is a management account of an
          * organization, this action can also be used to enroll member accounts within the
-         * organization.</p><p><h3>See Also:</h3>   <a
+         * organization.</p> <p>You must have the appropriate permissions to opt in to
+         * Compute Optimizer, to view its recommendations, and to opt out. For more
+         * information, see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/security-iam.html">Controlling
+         * access with AWS Identity and Access Management</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p> <p>When you opt in, Compute Optimizer automatically creates
+         * a Service-Linked Role in your account to access its data. For more information,
+         * see <a
+         * href="https://docs.aws.amazon.com/compute-optimizer/ug/using-service-linked-roles.html">Using
+         * Service-Linked Roles for AWS Compute Optimizer</a> in the <i>Compute Optimizer
+         * User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/compute-optimizer-2019-11-01/UpdateEnrollmentStatus">AWS
          * API Reference</a></p>
          *

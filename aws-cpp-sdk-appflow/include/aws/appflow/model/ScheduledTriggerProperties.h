@@ -262,6 +262,43 @@ namespace Model
      */
     inline ScheduledTriggerProperties& WithScheduleOffset(long long value) { SetScheduleOffset(value); return *this;}
 
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline const Aws::Utils::DateTime& GetFirstExecutionFrom() const{ return m_firstExecutionFrom; }
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline bool FirstExecutionFromHasBeenSet() const { return m_firstExecutionFromHasBeenSet; }
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline void SetFirstExecutionFrom(const Aws::Utils::DateTime& value) { m_firstExecutionFromHasBeenSet = true; m_firstExecutionFrom = value; }
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline void SetFirstExecutionFrom(Aws::Utils::DateTime&& value) { m_firstExecutionFromHasBeenSet = true; m_firstExecutionFrom = std::move(value); }
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline ScheduledTriggerProperties& WithFirstExecutionFrom(const Aws::Utils::DateTime& value) { SetFirstExecutionFrom(value); return *this;}
+
+    /**
+     * <p> Specifies the date range for the records to import from the connector in the
+     * first flow run. </p>
+     */
+    inline ScheduledTriggerProperties& WithFirstExecutionFrom(Aws::Utils::DateTime&& value) { SetFirstExecutionFrom(std::move(value)); return *this;}
+
   private:
 
     Aws::String m_scheduleExpression;
@@ -281,6 +318,9 @@ namespace Model
 
     long long m_scheduleOffset;
     bool m_scheduleOffsetHasBeenSet;
+
+    Aws::Utils::DateTime m_firstExecutionFrom;
+    bool m_firstExecutionFromHasBeenSet;
   };
 
 } // namespace Model

@@ -963,7 +963,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified IAM group.</p> <p>You
          * use this operation to attach a managed policy to a group. To embed an inline
-         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>For more information about
+         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -976,7 +979,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified IAM group.</p> <p>You
          * use this operation to attach a managed policy to a group. To embed an inline
-         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>For more information about
+         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -991,7 +997,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified IAM group.</p> <p>You
          * use this operation to attach a managed policy to a group. To embed an inline
-         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>For more information about
+         * policy in a group, use <a>PutGroupPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -1013,8 +1022,10 @@ namespace Model
          * <i>managed</i> policy to a role. To embed an inline policy in a role, use
          * <a>PutRolePolicy</a>. For more information about policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
-         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
-         * Also:</h3>   <a
+         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/AttachRolePolicy">AWS
          * API Reference</a></p>
          */
@@ -1030,8 +1041,10 @@ namespace Model
          * <i>managed</i> policy to a role. To embed an inline policy in a role, use
          * <a>PutRolePolicy</a>. For more information about policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
-         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
-         * Also:</h3>   <a
+         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/AttachRolePolicy">AWS
          * API Reference</a></p>
          *
@@ -1049,8 +1062,10 @@ namespace Model
          * <i>managed</i> policy to a role. To embed an inline policy in a role, use
          * <a>PutRolePolicy</a>. For more information about policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
-         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
-         * Also:</h3>   <a
+         * policies and inline policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/AttachRolePolicy">AWS
          * API Reference</a></p>
          *
@@ -1061,7 +1076,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified user.</p> <p>You use
          * this operation to attach a <i>managed</i> policy to a user. To embed an inline
-         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>For more information about
+         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -1074,7 +1092,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified user.</p> <p>You use
          * this operation to attach a <i>managed</i> policy to a user. To embed an inline
-         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>For more information about
+         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -1089,7 +1110,10 @@ namespace Model
         /**
          * <p>Attaches the specified managed policy to the specified user.</p> <p>You use
          * this operation to attach a <i>managed</i> policy to a user. To embed an inline
-         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>For more information about
+         * policy in a user, use <a>PutUserPolicy</a>.</p> <p>As a best practice, you can
+         * validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
          * policies, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
@@ -1291,9 +1315,11 @@ namespace Model
         /**
          * <p> Creates a new instance profile. For information about instance profiles, see
          * <a
-         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html#reference_iam-quotas-entities">About
-         * instance profiles</a>.</p> <p> For information about the number of instance
-         * profiles you can create, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html">Using
+         * roles for applications on Amazon EC2</a> in the <i>IAM User Guide</i>, and <a
+         * href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile">Instance
+         * profiles</a> in the <i>Amazon EC2 User Guide</i>.</p> <p> For information about
+         * the number of instance profiles you can create, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html">IAM
          * object quotas</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/CreateInstanceProfile">AWS
@@ -1304,9 +1330,11 @@ namespace Model
         /**
          * <p> Creates a new instance profile. For information about instance profiles, see
          * <a
-         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html#reference_iam-quotas-entities">About
-         * instance profiles</a>.</p> <p> For information about the number of instance
-         * profiles you can create, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html">Using
+         * roles for applications on Amazon EC2</a> in the <i>IAM User Guide</i>, and <a
+         * href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile">Instance
+         * profiles</a> in the <i>Amazon EC2 User Guide</i>.</p> <p> For information about
+         * the number of instance profiles you can create, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html">IAM
          * object quotas</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/CreateInstanceProfile">AWS
@@ -1319,9 +1347,11 @@ namespace Model
         /**
          * <p> Creates a new instance profile. For information about instance profiles, see
          * <a
-         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html#reference_iam-quotas-entities">About
-         * instance profiles</a>.</p> <p> For information about the number of instance
-         * profiles you can create, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html">Using
+         * roles for applications on Amazon EC2</a> in the <i>IAM User Guide</i>, and <a
+         * href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/iam-roles-for-amazon-ec2.html#ec2-instance-profile">Instance
+         * profiles</a> in the <i>Amazon EC2 User Guide</i>.</p> <p> For information about
+         * the number of instance profiles you can create, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_iam-quotas.html">IAM
          * object quotas</a> in the <i>IAM User Guide</i>.</p><p><h3>See Also:</h3>   <a
          * href="http://docs.aws.amazon.com/goto/WebAPI/iam-2010-05-08/CreateInstanceProfile">AWS
@@ -1450,8 +1480,11 @@ namespace Model
          * v1 as the policy's default version. For more information about policy versions,
          * see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-versions.html">Versioning
-         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>For more
-         * information about managed policies in general, see <a
+         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
+         * managed policies in general, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
          * Also:</h3>   <a
@@ -1466,8 +1499,11 @@ namespace Model
          * v1 as the policy's default version. For more information about policy versions,
          * see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-versions.html">Versioning
-         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>For more
-         * information about managed policies in general, see <a
+         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
+         * managed policies in general, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
          * Also:</h3>   <a
@@ -1484,8 +1520,11 @@ namespace Model
          * v1 as the policy's default version. For more information about policy versions,
          * see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-versions.html">Versioning
-         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>For more
-         * information about managed policies in general, see <a
+         * for managed policies</a> in the <i>IAM User Guide</i>.</p> <p>As a best
+         * practice, you can validate your IAM policies. To learn more, see <a
+         * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_policy-validator.html">Validating
+         * IAM policies</a> in the <i>IAM User Guide</i>.</p> <p>For more information about
+         * managed policies in general, see <a
          * href="https://docs.aws.amazon.com/IAM/latest/UserGuide/policies-managed-vs-inline.html">Managed
          * policies and inline policies</a> in the <i>IAM User Guide</i>.</p><p><h3>See
          * Also:</h3>   <a
