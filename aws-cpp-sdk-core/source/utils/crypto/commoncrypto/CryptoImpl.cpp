@@ -12,7 +12,10 @@
 #include <CommonCrypto/CommonCryptor.h>
 #include <CommonCrypto/CommonSymmetricKeywrap.h>
 #include <Availability.h>
+
+#ifdef ENABLE_COMMONCRYPTO_SPI
 #include <aws/core/external/CommonCryptorSPI.h>
+#endif
 
 //for OSX < 10.10 compatibility
 typedef int32_t CCStatus;
@@ -494,6 +497,7 @@ AWS_SUPPRESS_DEPRECATION(
 
             void AES_GCM_Cipher_CommonCrypto::InitCipher()
             {
+#ifdef ENABLE_COMMONCRYPTO_SPI
                 if (m_failure || !CheckKeyAndIVLength(KeyLengthBits/8, IVLengthBytes))
                 {
                     return;
@@ -529,10 +533,15 @@ AWS_SUPPRESS_DEPRECATION(
                     m_failure = true;
                     AWS_LOGSTREAM_ERROR(GCM_CC_LOG_TAG, "Error while initializing AES 256 GCM decryptor. Status code: " << status);
                 }
+#else
+                m_failure = true;
+                AWS_LOGSTREAM_ERROR(GCM_CC_LOG_TAG, "Error while initializing AES 256 GCM decryptor. Private API disabled");
+#endif
             }
 
             CryptoBuffer AES_GCM_Cipher_CommonCrypto::FinalizeEncryption()
             {
+#ifdef ENABLE_COMMONCRYPTO_SPI
                 if (m_failure)
                 {
                     AWS_LOGSTREAM_FATAL(GCM_CC_LOG_TAG, "Cipher not properly initialized for encryption finalization. Aborting");
@@ -553,12 +562,17 @@ AWS_SUPPRESS_DEPRECATION(
                     m_failure = true;
                     AWS_LOGSTREAM_ERROR(GCM_CC_LOG_TAG, "Encryption of buffer failed to get tag with status code: " << status);
                 }
+#else
+                m_failure = true;
+                AWS_LOGSTREAM_FATAL(GCM_CC_LOG_TAG, "Cipher not properly initialized for encryption finalization. Private API disabled");
+#endif
 
                 return CryptoBuffer();
             }
 
             CryptoBuffer AES_GCM_Cipher_CommonCrypto::FinalizeDecryption()
             {
+#ifdef ENABLE_COMMONCRYPTO_SPI
                 if (m_failure)
                 {
                     AWS_LOGSTREAM_FATAL(GCM_CC_LOG_TAG, "Cipher not properly initialized for decryption finalization. Aborting");
@@ -581,6 +595,10 @@ AWS_SUPPRESS_DEPRECATION(
                     m_failure = true;
                     AWS_LOGSTREAM_ERROR(GCM_CC_LOG_TAG, "Decryption of buffer failed to verify tag with status code: " << status);
                 }
+#else
+                m_failure = true;
+                AWS_LOGSTREAM_FATAL(GCM_CC_LOG_TAG, "Cipher not properly initialized for decryption finalization. Private API disabled");
+#endif
 
                 return CryptoBuffer();
             }
