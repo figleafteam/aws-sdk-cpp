@@ -15,11 +15,11 @@ set(AWS_DEPS_BUILD_DIR "${CMAKE_BINARY_DIR}/build" CACHE PATH "Dependencies buil
 set(AWS_DEPS_DOWNLOAD_DIR "${AWS_DEPS_BUILD_DIR}/downloads" CACHE PATH "Dependencies download directory.")
 
 set(AWS_C_COMMON_URL "https://github.com/awslabs/aws-c-common.git")
-set(AWS_C_COMMON_TAG "v0.4.42")
+set(AWS_C_COMMON_TAG "v0.5.5")
 include(BuildAwsCCommon)
 
 set(AWS_CHECKSUMS_URL "https://github.com/awslabs/aws-checksums.git")
-set(AWS_CHECKSUMS_TAG "v0.1.5")
+set(AWS_CHECKSUMS_TAG "v0.1.7")
 include(BuildAwsChecksums)
 
 set(AWS_EVENT_STREAM_URL "https://github.com/awslabs/aws-c-event-stream.git")
