@@ -205,6 +205,7 @@ if (BUILD_DEPS)
             # The 'wasm32' architecture does not support -moutline-atomics but test passes
             set(HAS_MOUTLINE_ATOMICS 0)
         endif()
+        message("Cross compiling third-party dependencies for architecture ${TARGET_ARCH}")
         execute_process(
             COMMAND ${CMAKE_COMMAND} -G ${CMAKE_GENERATOR}
             -DTARGET_ARCH=${TARGET_ARCH}
