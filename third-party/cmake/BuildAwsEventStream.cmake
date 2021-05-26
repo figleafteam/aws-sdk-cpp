@@ -59,5 +59,8 @@ else()
         -DCMAKE_TOOLCHAIN_FILE=${CMAKE_TOOLCHAIN_FILE}
         -DHAS_MOUTLINE_ATOMICS=${HAS_MOUTLINE_ATOMICS}
         -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=${CMAKE_RUNTIME_OUTPUT_DIRECTORY}
+        # TODO: Remove these and figure out why it's not automatically being found in Emscripten builds
+        -Daws-c-common_DIR=${AWS_DEPS_INSTALL_DIR}/lib/aws-c-common/cmake 
+        -Daws-checksums_DIR=${AWS_DEPS_INSTALL_DIR}/lib/aws-checksums/cmake
         )
 endif()
