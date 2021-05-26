@@ -199,6 +199,12 @@ if (BUILD_DEPS)
             WORKING_DIRECTORY ${AWS_DEPS_BUILD_DIR}
             RESULT_VARIABLE BUILD_3P_EXIT_CODE)
     else()
+
+        if(CMAKE_SYSTEM_NAME EQUAL Emscripten)
+            # TODO: Fix test that checks C compiler if supports outline-atomics
+            # The 'wasm32' architecture does not support -moutline-atomics but test passes
+            set(HAS_MOUTLINE_ATOMICS 0)
+        endif()
         execute_process(
             COMMAND ${CMAKE_COMMAND} -G ${CMAKE_GENERATOR}
             -DTARGET_ARCH=${TARGET_ARCH}
@@ -208,6 +214,7 @@ if (BUILD_DEPS)
             -DSTATIC_CRT=${STATIC_CRT}
             -DCMAKE_INSTALL_PREFIX=${AWS_DEPS_INSTALL_DIR}
             -DCMAKE_RUNTIME_OUTPUT_DIRECTORY=${CMAKE_CURRENT_BINARY_DIR}/bin
+            -DHAS_MOUTLINE_ATOMICS=${HAS_MOUTLINE_ATOMICS}
             ${GEN_PLATFORM_ARG}
             ${CMAKE_CURRENT_SOURCE_DIR}/third-party
             WORKING_DIRECTORY ${AWS_DEPS_BUILD_DIR}
